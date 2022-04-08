@@ -104,7 +104,7 @@ return require("packer").startup({
       config = conf("indent-blankline"),
     })
     use({ -- Colors
-      "folke/tokyonight.nvim",
+      "ellisonleao/gruvbox.nvim",
       -- "projekt0n/github-nvim-theme",
       config = conf("colors"),
     })

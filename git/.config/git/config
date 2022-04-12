@@ -1,7 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
     name = JaronPryor
-    email = xxjp2xx@gmail.com
+	email = xxjp2xx@gmail.com
 [includeIf "gitdir/i:~/work/"]
     path = ~/.config/git/work
 [alias]
@@ -10,7 +10,14 @@
 	co = checkout
 [pull]
     rebase = true
+	ff = only
 [core]
     editor = nvim
 [init]
     defaultBranch = main
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
